@@ -48,13 +48,7 @@ export const cartSlice = createSlice({
         }
       }
     },
-
-    /**
-     *
-     * @param {initialStateType} state
-     * @param {object} param1
-     * @param {initialStateType.products} param1.payload
-     */
+    
     removeItemFromCart(state, { payload }) {
       state.products = state.products.filter(
         (product) => product.productId !== payload.productId
